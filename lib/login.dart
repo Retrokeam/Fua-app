@@ -110,7 +110,7 @@ class _LoginPageState extends State<Login_page> {
                   //     ),
                   //   ),
                   // ),
-                  myTextField(),
+                
                   SizedBox(height: 20,),
                   //phonemumber textfield
                   Container(
@@ -142,7 +142,8 @@ class _LoginPageState extends State<Login_page> {
         //   ),
         // ),
         // border: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(5),
+          
+        //   borderRadius: BorderRadius.circular(50),
         // ),
         prefixIcon: CountryCodePicker(
           initialSelection: 'KE', // Set 'KE' for Kenya

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fua_app/mpesa.dart';
 //import 'package:fua_app/login.dart';
 import 'package:fua_app/splashscreen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen()
+      home: Mpesa()
     );
   }
 }
