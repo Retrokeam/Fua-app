@@ -33,6 +33,21 @@ class SignupPage extends StatelessWidget {
               ),
             ),
              SizedBox(height: 50,),
+             Container(
+               margin: const EdgeInsets.only(left: 15, right: 15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Create account",
+                    style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+             ),
             Container(
               margin: const EdgeInsets.only(left: 30, right: 30),
               child: Column(

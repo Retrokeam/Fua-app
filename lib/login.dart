@@ -113,6 +113,8 @@ class _LoginPageState extends State<Login_page> {
                 
                   SizedBox(height: 20,),
                   //phonemumber textfield
+
+
                   Container(
                     decoration:  BoxDecoration(
                       color: Colors.white,
@@ -167,10 +169,11 @@ class _LoginPageState extends State<Login_page> {
          print(phone1);
 },
 ),
-
-                    
+   
 
                   ),
+
+                  
                   SizedBox(height: 20,),
                 ],
               ),
