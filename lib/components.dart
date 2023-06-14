@@ -21,7 +21,7 @@ class myTextField extends StatelessWidget {
                     ),
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: "Email",
+                        hintText: "example@gmail.com",
                           prefixIcon: Icon(Icons.email,
                             color: Colors.lightBlue.shade400,
                           ),
