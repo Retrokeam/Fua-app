@@ -54,14 +54,14 @@ class _LoginPageState extends State<Login_page> {
               child: Column(
                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Welcome back",
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.normal
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Login with",
                     style: TextStyle(
                         fontSize: 35,
@@ -73,48 +73,6 @@ class _LoginPageState extends State<Login_page> {
                   myTextField(),
                   SizedBox(height: 20,),
                   //password textfield
-                  // Container(
-                  //   decoration:  BoxDecoration(
-                  //     color: Colors.white,
-                  //       borderRadius: BorderRadius.circular(30),
-                  //       boxShadow:[
-                  //         BoxShadow(
-                  //             blurRadius: 10,
-                  //             spreadRadius: 7,
-                  //             offset: Offset(1, 1),
-                  //             color: Colors.grey.withOpacity(0.5)
-                  //         )
-                  //       ]
-                  //   ),
-                  //   child: TextField(
-                  //     obscureText: true,
-                  //     decoration: InputDecoration(
-                  //         hintText: "Password",
-                  //         prefixIcon: Icon(Icons.password,
-                  //           color: Colors.lightBlue.shade400,
-                  //         ),
-                  //         focusedBorder: OutlineInputBorder(
-                  //             borderRadius: BorderRadius.circular(30),
-                  //             borderSide: BorderSide(
-                  //                 color: Colors.white,
-                  //                 width: 1.0
-                  //             )
-                  //         ),
-                  //         enabledBorder: OutlineInputBorder(
-                  //             borderRadius:  BorderRadius.circular(30),
-                  //             borderSide: BorderSide(
-                  //                 color: Colors.white,
-                  //                 width: 1.0
-                  //             )
-                  //         )
-                  //     ),
-                  //   ),
-                  // ),
-                
-                  SizedBox(height: 20,),
-                  //phonemumber textfield
-
-
                   Container(
                     decoration:  BoxDecoration(
                       color: Colors.white,
@@ -128,50 +86,92 @@ class _LoginPageState extends State<Login_page> {
                           )
                         ]
                     ),
-                    child: 
-                    TextField(
-      controller: phone,
-      decoration: InputDecoration(
-        //floatingLabelAlignment: FloatingLabelAlignment.center,
-        //labelText: 'Phone Number',
-        //floatingLabelBehavior: FloatingLabelBehavior.always,
-        // enabledBorder: const OutlineInputBorder(
-        //   borderSide: BorderSide(color: Color.fromARGB(255, 59, 59, 59)),
-        // ),
-        // focusedBorder: const OutlineInputBorder(
-        //   borderSide: BorderSide(
-        //     color: Color.fromARGB(255, 255, 191, 0),
-        //   ),
-        // ),
-        // border: OutlineInputBorder(
+                    child: TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          hintText: "Password",
+                          prefixIcon: Icon(Icons.password,
+                            color: Colors.lightBlue.shade400,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(30),
+                              borderSide: BorderSide(
+                                  color: Colors.white,
+                                  width: 1.0
+                              )
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius:  BorderRadius.circular(30),
+                              borderSide: BorderSide(
+                                  color: Colors.white,
+                                  width: 1.0
+                              )
+                          )
+                      ),
+                    ),
+                  ),
+                
+                  SizedBox(height: 20,),
+                  //phonemumber textfield
+
+
+      //             Container(
+      //               decoration:  BoxDecoration(
+      //                 color: Colors.white,
+      //                   borderRadius: BorderRadius.circular(30),
+      //                   boxShadow:[
+      //                     BoxShadow(
+      //                         blurRadius: 10,
+      //                         spreadRadius: 7,
+      //                         offset: Offset(1, 1),
+      //                         color: Colors.grey.withOpacity(0.5)
+      //                     )
+      //                   ]
+      //               ),
+      //               child: 
+      //               TextField(
+      // controller: phone,
+      // decoration: InputDecoration(
+      //   //floatingLabelAlignment: FloatingLabelAlignment.center,
+      //   //labelText: 'Phone Number',
+      //   //floatingLabelBehavior: FloatingLabelBehavior.always,
+      //   // enabledBorder: const OutlineInputBorder(
+      //   //   borderSide: BorderSide(color: Color.fromARGB(255, 59, 59, 59)),
+      //   // ),
+      //   // focusedBorder: const OutlineInputBorder(
+      //   //   borderSide: BorderSide(
+      //   //     color: Color.fromARGB(255, 255, 191, 0),
+      //   //   ),
+      //   // ),
+      //   // border: OutlineInputBorder(
           
-        //   borderRadius: BorderRadius.circular(50),
-        // ),
-        prefixIcon: CountryCodePicker(
-          initialSelection: 'KE', // Set 'KE' for Kenya
-          onChanged: (value) {
-            code = value.toString();
-            phone1 = code + "" + phone.text;
-             print(phone1);
-          },
-          // Optional. Shows only country name and flag
-          showFlag: true,
-          // Optional. Shows only country name and code
-          showCountryOnly: false,
-          // Optional. Shows the country list as dropdown
-          showDropDownButton: true,
-          // Required for onChanged to work
-        ),
-      ),
-       keyboardType: TextInputType.phone,
-      onChanged: (value) {
-        phone1 = "$code $value";
-         print(phone1);
-},
-),
+      //   //   borderRadius: BorderRadius.circular(50),
+      //   // ),
+      //   prefixIcon: CountryCodePicker(
+      //     initialSelection: 'KE', // Set 'KE' for Kenya
+      //     onChanged: (value) {
+      //       code = value.toString();
+      //       phone1 = code + "" + phone.text;
+      //        print(phone1);
+      //     },
+      //     // Optional. Shows only country name and flag
+      //     showFlag: true,
+      //     // Optional. Shows only country name and code
+      //     showCountryOnly: false,
+      //     // Optional. Shows the country list as dropdown
+      //     showDropDownButton: true,
+      //     // Required for onChanged to work
+      //   ),
+      // ),
+      //  keyboardType: TextInputType.phone,
+      // onChanged: (value) {
+      //   phone1 = "$code $value";
+      //    print(phone1);
+      // },
+      // ),
    
 
-                  ),
+      // ),
 
                   
                   SizedBox(height: 20,),
@@ -199,7 +199,8 @@ class _LoginPageState extends State<Login_page> {
                     );
                   },
                   child: const Text("Login",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20
+                    ),
                   ),
                 ),
               ),
