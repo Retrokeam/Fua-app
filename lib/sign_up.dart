@@ -23,7 +23,7 @@ class SignupPage extends StatelessWidget {
                           "images/logo2.png"
                       ),
                       fit: BoxFit.cover
-                  )
+                  ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -129,18 +129,6 @@ class SignupPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20,),
-                  // Row(
-                  //   children: [
-                  //     Expanded(child: Container(),),
-                  //     Text(
-                  //       "Forgot your password",
-                  //       style: TextStyle(
-                  //           fontSize: 20,
-                  //           color: Colors.grey[500]
-                  //       ),
-                  //     )
-                  //   ],
-                  // )
                 ],
               ),
             ),
